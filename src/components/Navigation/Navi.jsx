@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BsMicFill } from 'react-icons/bs';
 import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
 import { MdOutlineDarkMode } from 'react-icons/md';
@@ -9,9 +10,11 @@ const Navigation = () => (
     <div className="fixed z-40 w-full bg-pink-700 text-white">
       <nav className=" flex items-center  justify-between p-2">
         <li className="hover:text-slate-500">
-          <span>
-            <IoIosArrowBack />
-          </span>
+          <Link to="/">
+            <span>
+              <IoIosArrowBack />
+            </span>
+          </Link>
         </li>
         <li className="animate-bounce">
           <span>Thirukkural</span>
