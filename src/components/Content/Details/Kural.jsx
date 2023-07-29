@@ -13,7 +13,7 @@ const Kural = () => {
 
   return (
     <>
-      <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center gap-5 bg-pink-700  pt-28 text-white">
+      <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center gap-5 overflow-y-scroll bg-pink-700  pb-20 pt-[80%] text-white">
         <div className="flex w-[80%] flex-col items-center justify-center gap-5 sm:text-justify">
           <h1>Prologue</h1>
           <h3>The Praise of God</h3>
