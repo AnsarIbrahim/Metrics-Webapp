@@ -20,7 +20,7 @@ const kuralData = [
 
 const SubMain = () => (
   <>
-    <div className="flex h-full items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20 pt-96 hover:scroll-auto">
+    <div className=" flex h-full items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20  pt-80 hover:scroll-auto">
       <div className=" mt-20 grid h-full w-full gap-4 p-6 shadow shadow-slate-200 sm:mt-0 sm:grid-cols-2">
         {kuralData.map((kural, index) => (
           <div

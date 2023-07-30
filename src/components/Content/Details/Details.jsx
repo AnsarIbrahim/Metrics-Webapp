@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigation from '../../Navigation/Navi';
+import NaviDetails from './NavDetails';
 import Head from '../Head';
 import Kural from './Kural';
 import Footer from '../../Footer/Footer';
 
 const Details = () => (
   <>
-    <Navigation />
+    <NaviDetails />
     <Head />
     <Kural />
     <Footer />
