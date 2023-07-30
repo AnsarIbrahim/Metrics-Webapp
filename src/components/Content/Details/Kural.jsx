@@ -14,7 +14,7 @@ const Kural = () => {
   return (
     <>
       {!showTranslation ? (
-        <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700  pb-5 pt-[90%] text-white sm:pt-32">
+        <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700  pb-5 pt-[75%] text-white sm:pt-32">
           <div className="flex w-[80%] flex-col items-center justify-center gap-2 text-center sm:pt-5 sm:text-center">
             <h1>Prologue</h1>
             <h3>The Praise of God</h3>
@@ -36,7 +36,7 @@ const Kural = () => {
           </button>
         </div>
       ) : (
-        <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700 pb-5 pt-[95%] text-white sm:pt-32">
+        <div className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700 pb-5 pt-[75%] text-white sm:pt-32">
           <div className="flex w-[80%] flex-col items-center justify-center gap-2 text-center sm:pt-5 sm:text-center">
             <h2>அறத்துப்பால்</h2>
             <h4>பாயிரவியல்</h4>
