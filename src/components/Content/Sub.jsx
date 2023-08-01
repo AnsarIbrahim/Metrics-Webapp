@@ -11,6 +11,9 @@ const SubMain = () => {
   const [fetchedKurals, setFetchedKurals] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const hasPreviousPage = false;
+  const hasNextPage = true;
+
   useEffect(() => {
     const fetchAllKurals = async () => {
       try {
@@ -49,7 +52,7 @@ const SubMain = () => {
         </p>
       ) : (
         <>
-          <Next />
+          <Next hasPreviousPage={hasPreviousPage} hasNextPage={hasNextPage} />
           <div className="flex h-full w-[full] flex-col items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20 pt-64 hover:scroll-auto dark:bg-slate-800 dark:text-white sm:pt-[27%] md:pt-44">
             <div className="z-30 grid h-full w-[70wh] grid-cols-2 gap-4 p-3 shadow shadow-slate-200 dark:bg-slate-800 dark:text-white sm:mt-0 sm:w-[70wh] sm:grid-cols-3 md:w-[70wh] md:grid-cols-3 lg:w-[80wh] lg:grid-cols-4 xl:w-[70wh] xl:grid-cols-6">
               {fetchedKurals.map((kural, index) => (
