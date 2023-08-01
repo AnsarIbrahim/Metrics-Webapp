@@ -49,8 +49,14 @@ const Kural = ({ kuralData }) => {
             <>
               <h2>{kuralData.sect_tam}</h2>
               <h4>{kuralData.chapgrp_tam}</h4>
-              <p>{`${kuralData.number}: ${kuralData.chap_tam} `}</p>
-              <p>{kuralData.line1}</p>
+              <p>{kuralData.chap_tam}</p>
+              <p>
+                `$
+                {kuralData.number}
+                : $
+                {kuralData.line1}
+                `
+              </p>
               <p>{kuralData.line2}</p>
               <p>{kuralData.tam_exp}</p>
               <div>
