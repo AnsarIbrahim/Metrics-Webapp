@@ -15,7 +15,7 @@ const SubMain = () => {
     const fetchAllKurals = async () => {
       try {
         const fetchPromises = [];
-        for (let num = 1; num <= 133; num += 1) {
+        for (let num = 1; num <= 50; num += 1) {
           const fetchPromise = dispatch(fetchData(num));
           fetchPromises.push(fetchPromise);
         }
