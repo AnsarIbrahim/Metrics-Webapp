@@ -31,8 +31,8 @@ const Kural = ({ kuralData }) => {
           {!showTranslation ? (
             <>
               <p>{kuralData.sect_eng}</p>
-              <h3>{kuralData.chapgrp_eng}</h3>
-              <h4>{kuralData.chap_eng}</h4>
+              <p>{kuralData.chapgrp_eng}</p>
+              <p>{kuralData.chap_eng}</p>
               <p>{`${kuralData.number}: ${kuralData.eng}`}</p>
               <p>{kuralData.eng_exp}</p>
               <div>
@@ -47,17 +47,13 @@ const Kural = ({ kuralData }) => {
             </>
           ) : (
             <>
-              <h2>{kuralData.sect_tam}</h2>
-              <h4>{kuralData.chapgrp_tam}</h4>
+              <p>{kuralData.sect_tam}</p>
+              <p>{kuralData.chapgrp_tam}</p>
               <p>{kuralData.chap_tam}</p>
-              <p>
-                `$
-                {kuralData.number}
-                : $
-                {kuralData.line1}
-                `
-              </p>
-              <p>{kuralData.line2}</p>
+              <div>
+                <p>{`${kuralData.number}: ${kuralData.line1}`}</p>
+                <p>{kuralData.line2}</p>
+              </div>
               <p>{kuralData.tam_exp}</p>
               <div>
                 <button
