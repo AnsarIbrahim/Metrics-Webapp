@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { useDispatch } from 'react-redux';
-import Thiru from './thiruvalluvar-4.svg';
-import Next from './next/Next';
-import { fetchData } from '../../redux/Home/HomeSlice';
+import Thiru from '../thiruvalluvar-4.svg';
+import Next from './Next';
+import { fetchData } from '../../../redux/Home/HomeSlice';
 
-const SubMain = () => {
+const NextPage = () => {
   const dispatch = useDispatch();
   const [fetchedKurals, setFetchedKurals] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,7 @@ const SubMain = () => {
     const fetchAllKurals = async () => {
       try {
         const fetchPromises = [];
-        for (let num = 1; num <= 133; num += 1) {
+        for (let num = 134; num <= 266; num += 1) {
           const fetchPromise = dispatch(fetchData(num));
           fetchPromises.push(fetchPromise);
         }
@@ -81,4 +81,4 @@ const SubMain = () => {
   );
 };
 
-export default SubMain;
+export default NextPage;

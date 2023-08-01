@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import DisplayHome from './components/DisplayHome/DisplayHome';
 import Home from './components/Home/Home';
 import Details from './components/Content/Details/Details';
+import Home2 from './components/Home/Home2';
 import store from './redux/Store';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<DisplayHome />} />
             <Route path="/home" element={<Home />} />
             <Route path="/details/:num" element={<Details />} />
+            <Route path="/next" element={<Home2 />} />
           </Routes>
         </Router>
       </Provider>
