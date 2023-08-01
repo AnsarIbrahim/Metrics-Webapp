@@ -20,7 +20,7 @@ const NaviDetails = ({ handleDarkMode, isDarkMode }) => (
         <li className="animate-bounce">
           <span>Thirukkural</span>
         </li>
-        <li className="flex items-center justify-around gap-9">
+        <li className="flex items-center justify-around gap-2">
           <div className="flex gap-2">
             <span className="hover:text-slate-500">
               {' '}
@@ -33,11 +33,11 @@ const NaviDetails = ({ handleDarkMode, isDarkMode }) => (
           </div>
           {isDarkMode ? (
             <button type="button" title="darkmode" onClick={handleDarkMode}>
-              <MdDarkMode className="md:bl hidden  hover:text-slate-500 md:block" />
+              <MdDarkMode className=" hidden  hover:text-slate-500 md:block" />
             </button>
           ) : (
             <button type="button" title="darkmode" onClick={handleDarkMode}>
-              <MdDarkMode className="md:bl hidden  hover:text-slate-500 md:block" />
+              <MdDarkMode className="hidden  hover:text-slate-500 md:block" />
             </button>
           )}
         </li>

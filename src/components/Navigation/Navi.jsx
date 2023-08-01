@@ -20,7 +20,7 @@ const Navigation = ({ handleDarkMode, isDarkMode }) => (
         <li className="animate-bounce">
           <span>Thirukkural</span>
         </li>
-        <li className="flex items-center justify-around gap-9">
+        <li className="flex items-center justify-around gap-2">
           <div className="flex gap-2">
             <span className="hover:text-slate-500">
               {' '}
