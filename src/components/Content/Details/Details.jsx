@@ -10,6 +10,11 @@ const Details = () => {
   const { num } = useParams();
   const [kuralData, setKuralData] = useState(null);
   const dispatch = useDispatch();
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  const handleDarkMode = () => {
+    setDarkMode((res) => !res);
+  };
 
   useEffect(() => {
     const fetchKuralData = async () => {
@@ -25,9 +30,11 @@ const Details = () => {
 
   return (
     <>
-      <NaviDetails />
-      <Kural kuralData={kuralData} />
-      <Footer />
+      <div className={isDarkMode ? 'dark' : 'light'}>
+        <NaviDetails handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
+        <Kural kuralData={kuralData} />
+        <Footer handleDarkMode={handleDarkMode} isDarkMode={isDarkMode} />
+      </div>
     </>
   );
 };

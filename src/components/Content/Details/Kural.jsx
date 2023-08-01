@@ -17,7 +17,7 @@ const Kural = ({ kuralData }) => {
 
   if (!kuralData) {
     return (
-      <p className="absolute m-auto flex h-[100vh] w-full flex-col  items-center justify-center  overflow-y-scroll bg-pink-700 text-white">
+      <p className="absolute m-auto flex h-[100vh] w-full flex-col  items-center justify-center  overflow-y-scroll bg-pink-700 text-white dark:bg-slate-800 dark:text-white">
         Loading...
       </p>
     );
@@ -25,9 +25,13 @@ const Kural = ({ kuralData }) => {
 
   return (
     <>
-      <div className="absolute m-auto flex h-[100vh] w-full flex-col  items-center justify-center  overflow-y-scroll bg-pink-700 text-white">
-        <div className="flex w-[80%] flex-col items-center justify-center gap-2  text-center text-xs sm:text-lg">
-          <img src={Thiru} alt="img" className="img opacity-50" />
+      <div className="absolute m-auto flex h-[100vh] w-full flex-col  items-center justify-center  overflow-y-scroll bg-pink-700 text-white dark:bg-slate-800 dark:text-white">
+        <div className="flex w-[80%] flex-col items-center justify-center gap-2  text-center text-xs dark:bg-slate-800 dark:text-white sm:text-lg">
+          <img
+            src={Thiru}
+            alt="img"
+            className="img opacity-50 dark:opacity-80"
+          />
           {!showTranslation ? (
             <>
               <p>{kuralData.sect_eng}</p>
@@ -39,7 +43,7 @@ const Kural = ({ kuralData }) => {
                 <button
                   type="button"
                   onClick={handleTranslateClick}
-                  className="flex items-center justify-center rounded-full  bg-pink-500 px-6 py-1 hover:bg-slate-500"
+                  className="flex items-center justify-center rounded-full  bg-pink-500 px-6 py-1 hover:bg-slate-500 dark:bg-slate-600 dark:text-white"
                 >
                   Translate
                 </button>
@@ -59,7 +63,7 @@ const Kural = ({ kuralData }) => {
                 <button
                   type="button"
                   onClick={handleCloseClick}
-                  className="rounded-full bg-pink-500 px-6 py-1 hover:bg-slate-500"
+                  className="rounded-full bg-pink-500 px-6 py-1 hover:bg-slate-500 dark:bg-slate-600 dark:text-white"
                 >
                   Close
                 </button>

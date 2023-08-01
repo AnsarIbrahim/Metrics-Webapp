@@ -44,22 +44,26 @@ const NextPage = () => {
   return (
     <>
       {loading ? (
-        <p className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700 pb-5 pt-[50%] text-white sm:pt-32">
+        <p className="absolute m-auto flex h-full w-full flex-col items-center justify-center overflow-y-scroll bg-pink-700 pb-5 pt-[50%] text-white dark:bg-slate-800 dark:text-white sm:pt-32">
           Loading...
         </p>
       ) : (
         <>
           <Next />
-          <div className="flex h-full w-[full] flex-col items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20 pt-64 hover:scroll-auto sm:pt-[27%] md:pt-44">
+          <div className="flex h-full w-[full] flex-col items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20 pt-64 hover:scroll-auto dark:bg-slate-800 dark:text-white sm:pt-[27%] md:pt-44">
             <div className="z-30 grid h-full w-[70wh] grid-cols-2 gap-4 p-3 shadow shadow-slate-200 sm:mt-0 sm:w-[70wh] sm:grid-cols-3 md:w-[70wh] md:grid-cols-3 lg:w-[80wh] lg:grid-cols-4 xl:w-[70wh] xl:grid-cols-6">
               {fetchedKurals.map((kural, index) => (
                 <div
                   key={kural.num}
-                  className={`flex items-center justify-between gap-3 bg-pink-600 p-4 shadow ${
+                  className={`flex items-center justify-between gap-3 bg-pink-600 p-4 shadow dark:bg-slate-800 dark:text-white ${
                     index % 2 === 0 ? '' : 'bg-pink-700'
                   }`}
                 >
-                  <img src={Thiru} alt="img" className="thiru opacity-25" />
+                  <img
+                    src={Thiru}
+                    alt="img"
+                    className="thiru opacity-25 dark:opacity-80"
+                  />
                   <div className="flex items-center gap-3 text-white">
                     <p>{`Kural ${kural.num}`}</p>
                     <span className="cursor-pointer hover:text-slate-500">
