@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 
 const DisplayHome = () => (
   <>
-    <div className=" flex h-[100vh] flex-col items-center justify-center gap-5 bg-pink-700 text-white">
+    <div className="flex h-[100vh] flex-col items-center justify-center gap-5 bg-pink-700 text-white">
       <h1 className=" flex flex-col items-center justify-center text-center text-6xl">
         Hi
         <br />
