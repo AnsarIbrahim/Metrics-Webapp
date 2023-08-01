@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Next = () => (
   <>
-    <div className="fixed flex h-full w-full items-center justify-between p-1 md:p-5 lg:p-1">
+    <div className="fixed z-0 flex h-full w-full items-center justify-between p-1 md:p-5 lg:p-1">
       <div
-        className=" flex
-       w-full justify-between"
+        className=" z-0
+       flex w-full justify-between"
       >
         <NavLink to="/home">
           <button type="button" className="text-white">
