@@ -14,7 +14,7 @@ const SubMain = () => {
     const fetchAllKurals = async () => {
       try {
         const fetchPromises = [];
-        for (let num = 1; num <= 50; num += 1) {
+        for (let num = 1; num <= 104; num += 1) {
           const fetchPromise = dispatch(fetchData(num));
           fetchPromises.push(fetchPromise);
         }
@@ -23,7 +23,6 @@ const SubMain = () => {
           .map((res) => res.payload)
           .sort((a, b) => a.num - b.num);
 
-        // Check for duplicates and update the fetched data
         setFetchedKurals((prevKurals) => {
           const existingNumbers = new Set(prevKurals.map((kural) => kural.num));
           const uniqueKurals = sortedData.filter(
@@ -48,16 +47,20 @@ const SubMain = () => {
           Loading...
         </p>
       ) : (
-        <div className="flex h-full items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20  pt-64 hover:scroll-auto sm:pt-[27%] md:pt-44">
-          <div className="grid h-full w-full gap-4 p-6 shadow shadow-slate-200 sm:mt-0 sm:grid-cols-2">
+        <div className="flex h-full w-[full] flex-col items-center justify-center overflow-y-auto scroll-smooth bg-pink-800 px-5 pb-20  pt-64 hover:scroll-auto sm:pt-[27%] md:pt-44">
+          <div className="flex w-[full] items-center justify-between bg-black pb-5 text-sky-400">
+            <button type="button">Previous</button>
+            <button type="button">next</button>
+          </div>
+          <div className="grid h-full w-full grid-cols-2 gap-4 p-6 shadow shadow-slate-200 sm:mt-0 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-8">
             {fetchedKurals.map((kural, index) => (
               <div
                 key={kural.num}
-                className={`flex items-center justify-between bg-pink-600 p-4 shadow ${
+                className={`flex items-center justify-between gap-3 bg-pink-600 p-4 shadow ${
                   index % 2 === 0 ? '' : 'bg-pink-700'
                 }`}
               >
-                <img src={Thiru} alt="img" className="img opacity-25" />
+                <img src={Thiru} alt="img" className="thiru opacity-25" />
                 <div className="flex items-center gap-4 text-white">
                   <p>{`Kural ${kural.num}`}</p>
                   <span className="cursor-pointer hover:text-slate-500">
