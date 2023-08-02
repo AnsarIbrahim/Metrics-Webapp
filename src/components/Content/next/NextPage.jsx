@@ -18,7 +18,7 @@ const NextPage = () => {
     const fetchAllKurals = async () => {
       try {
         const fetchPromises = [];
-        for (let num = 51; num <= 100; num += 1) {
+        for (let num = 55; num <= 108; num += 1) {
           const fetchPromise = dispatch(fetchData(num));
           fetchPromises.push(fetchPromise);
         }
