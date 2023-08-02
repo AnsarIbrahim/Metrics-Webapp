@@ -63,7 +63,7 @@ Our web app brings the profound teachings of Thirukkural to your fingertips. Exp
 
 - **Browse and access the Kural couplets in an organized list.**
 - **Dive deep into each Kural with detailed explanations and additional insights.**
-- **Discover translations in various languages for a broader audience.**
+- **Discover translations in English and Tamil languages for a broader audience.**
 - **Personalize your reading experience with the option of light or dark mode.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
