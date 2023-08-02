@@ -35,10 +35,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 **Thirukkural** <a name="about-project"></a>
+# 📖 **Thirukkural - A Timeless Masterpiece of Tamil Literature** <a name="about-project"></a>
 
 **Thirukkural** is a remarkable collection of 1,330 couplets written by the revered Tamil poet Thiruvalluvar over two millennia ago. It is a treasure trove of wisdom, encompassing ethical values, governance principles, love, and more.
-Our web app brings the profound teachings of Thirukkural to your fingertips. Explore the Kural couplets, read detailed explanations, and discover the essence of ancient Tamil literature.
+Our web app brings the profound teachings of Thirukkural to your fingertips. Explore the Kural couplets, read detailed explanations, and discover the essence of ancient Tamil literature. Our web app is powered by the [Thirukkural](https://api-thirukkural.vercel.app/) API, which provides seamless access to the timeless verses of Thiruvalluvar's Thirukkural.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -178,7 +178,7 @@ If you like this project give it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Original design idea by Nelson Sakwa on Behance.
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 - I extend my gratitude to the creators and maintainers of the [Thirukkural](https://api-thirukkural.vercel.app/) API for providing the data that powers our application.
 - This application was developed as a project for Microverse, inspired by a passion for exploring countries.
 
