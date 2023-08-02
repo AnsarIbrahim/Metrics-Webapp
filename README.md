@@ -77,7 +77,7 @@ Our web app brings the profound teachings of Thirukkural to your fingertips. Exp
 
 ## 📹 The Video <a name="the-video"></a>
 
-- [Video of My Project](Soon)
+- [Video of My Project](https://www.loom.com/share/a473a5b6af9844efb0029a63e0e4e0b6?sid=5172f7b8-98f9-4388-9c12-5e76aefdf837)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
