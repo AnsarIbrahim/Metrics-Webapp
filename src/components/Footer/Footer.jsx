@@ -7,11 +7,21 @@ const Footer = ({ handleDarkMode, isDarkMode }) => (
     <div className="fixed bottom-0 z-40 flex h-10 w-full items-center justify-start  bg-pink-700 shadow  shadow-slate-100 dark:bg-gray-800 sm:h-10">
       <div className=" pl-10">
         {isDarkMode ? (
-          <button type="button" title="darkmode" onClick={handleDarkMode}>
+          <button
+            type="button"
+            data-testid="dark-mode-button"
+            title="darkmode"
+            onClick={handleDarkMode}
+          >
             <MdDarkMode className="items-center justify-start text-white sm:hidden" />
           </button>
         ) : (
-          <button type="button" title="darkmode" onClick={handleDarkMode}>
+          <button
+            type="button"
+            data-testid="dark-mode-button"
+            title="darkmode"
+            onClick={handleDarkMode}
+          >
             <MdDarkMode className="items-center justify-start text-slate-700 sm:hidden" />
           </button>
         )}

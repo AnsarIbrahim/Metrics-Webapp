@@ -32,11 +32,21 @@ const Navigation = ({ handleDarkMode, isDarkMode }) => (
             </span>
           </div>
           {isDarkMode ? (
-            <button type="button" title="darkmode" onClick={handleDarkMode}>
+            <button
+              type="button"
+              data-testid="dark-mode-button"
+              title="darkmode"
+              onClick={handleDarkMode}
+            >
               <MdDarkMode className="md:bl hidden  hover:text-slate-500 md:block" />
             </button>
           ) : (
-            <button type="button" title="darkmode" onClick={handleDarkMode}>
+            <button
+              type="button"
+              data-testid="dark-mode-button"
+              title="darkmode"
+              onClick={handleDarkMode}
+            >
               <MdDarkMode className="md:bl hidden  hover:text-slate-500 md:block" />
             </button>
           )}

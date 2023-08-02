@@ -3,8 +3,10 @@ import SubMain from './Sub';
 
 const Main = () => (
   <>
-    <Head />
-    <SubMain />
+    <main data-testid="home-container">
+      <Head />
+      <SubMain />
+    </main>
   </>
 );
 
