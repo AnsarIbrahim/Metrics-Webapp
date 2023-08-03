@@ -1,0 +1,9 @@
+{
+  "appId": "com.Thirukural.app",
+  "appName": "Thirukural",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "http://192.168.29.222:3000/",
+    "cleartext": true
+  }
+}
