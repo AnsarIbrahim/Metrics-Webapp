@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Thirukural</string>
-    <string name="title_activity_main">Thirukural</string>
-    <string name="package_name">com.Thirukural.app</string>
-    <string name="custom_url_scheme">com.Thirukural.app</string>
+    <string name="app_name">thirukural</string>
+    <string name="title_activity_main">thirukural</string>
+    <string name="package_name">com.thirukural.app</string>
+    <string name="custom_url_scheme">com.thirukural.app</string>
 </resources>
