@@ -1,0 +1,9 @@
+{
+  "appId": "com.Thirukural.app",
+  "appName": "Thirukural",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}
